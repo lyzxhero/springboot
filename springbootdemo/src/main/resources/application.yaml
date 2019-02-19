@@ -1,0 +1,29 @@
+
+spring:
+  profiles:
+    active: local
+  boot:
+    p1: hero
+
+
+hero:
+  name: 张三${random.uuid}
+  age: ${random.int}
+  height: 70
+  go: 'liyaohui\n123'
+
+
+animal:
+  desc: 动物
+  email: hero@163.com
+  list:
+    - dog
+    - cat
+    - pig
+
+drag: [a1,a2,a3]
+
+server:
+  port: 8088
+  servlet:
+    context-path: /springboot
